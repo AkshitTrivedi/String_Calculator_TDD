@@ -62,4 +62,11 @@ public class TestStringCalculator
         }
     }
 
+    //7th Test Case to Ignore Values greater than 1000.
+    @Test
+    public void Ignore_Values_Greater_Than_1000()
+    {
+        assertEquals("5+10+15",StringCalculator.greater_than_1000("5+1050+10+15"));
+    }
+
 }
