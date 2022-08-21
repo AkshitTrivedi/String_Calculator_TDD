@@ -1,5 +1,7 @@
 package StringCalcFile;
 
+import java.util.ArrayList;
+
 import static java.lang.Integer.parseInt;
 
 public class StringCalculator
@@ -17,6 +19,7 @@ public class StringCalculator
         {
             return 1;
         }
+        Negative_Numbers_Exception(nums,len);
         return sum(nums,len);
     }
 
@@ -30,6 +33,20 @@ public class StringCalculator
         return tot;
     }
 
-
+    static void Negative_Numbers_Exception(String nums[],int len)
+    {
+        ArrayList<String> negative_nums = new ArrayList<String>();
+        for(int i=0;i<len;i++)
+        {
+            if(parseInt(nums[i])<0)
+            {
+                negative_nums.add(nums[i]);
+            }
+        }
+        if(negative_nums.size()>0)
+        {
+            throw new RuntimeException("Negatives not allowed: "+ negative_nums);
+        }
+    }
 
 }

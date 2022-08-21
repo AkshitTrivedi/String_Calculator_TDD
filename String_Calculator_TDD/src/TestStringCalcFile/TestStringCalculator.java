@@ -44,7 +44,7 @@ public class TestStringCalculator
         }
         catch(RuntimeException e)
         {
-            System.out.println("Negatives not allowed: -5");
+            System.out.println("Negatives not allowed: [-5]");
         }
     }
 

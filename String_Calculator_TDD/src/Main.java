@@ -21,5 +21,8 @@ public class Main
 
         //Passing 60,88,33,47,55,10,500 as String to the Function so that their sum will be returned.
         System.out.println(StringCalculator.add("60,88,33,47,55,10,500"));
+
+        //Passing Negative Number so that Exception will be raised.
+        System.out.println(StringCalculator.add("-5,10,55"));
     }
 }
