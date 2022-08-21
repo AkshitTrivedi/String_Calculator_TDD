@@ -8,7 +8,8 @@ public class StringCalculator
 {
     public static int add(String numbers)
     {
-        String nums[] = numbers.split(",");
+        //String nums[] = numbers.split(",");
+        String nums[] = numbers.split("\n|,");
         int len = nums.length;
 
         if(numbers.isEmpty())
@@ -48,12 +49,12 @@ public class StringCalculator
         return tot;
     }
 
-    public static int new_line_delimiter(String numbers)
-    {
-        String nums[] = numbers.split("\n|,");
-        int len = nums.length;
-        return sum(nums,len);
-    }
+//    public static int new_line_delimiter(String numbers)
+//    {
+//        String nums[] = numbers.split("\n|,");
+//        int len = nums.length;
+//        return sum(nums,len);
+//    }
 
 
 //    static void Negative_Numbers_Exception(String nums[],int len)

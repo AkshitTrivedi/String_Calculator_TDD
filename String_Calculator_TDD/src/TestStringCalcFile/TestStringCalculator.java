@@ -73,6 +73,6 @@ public class TestStringCalculator
     @Test
     public void Handling_New_Line_Delimiter()
     {
-        assertEquals(1+2+3,StringCalculator.new_line_delimiter("1\n2,3"));
+        assertEquals(1+2+3,StringCalculator.add("1\n2,3"));
     }
 }

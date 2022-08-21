@@ -32,6 +32,7 @@ public class Main
         System.out.println(StringCalculator.add("2,1001"));
 
         //Passing 10\n50,20\n30 as String and their sum will be returned.
-        System.out.println(StringCalculator.new_line_delimiter("10\n50,20\n30"));
+        System.out.println(StringCalculator.add("10\n50,20\n30"));
+
     }
 }
