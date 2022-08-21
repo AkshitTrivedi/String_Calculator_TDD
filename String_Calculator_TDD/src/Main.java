@@ -12,5 +12,6 @@ public class Main
 
         //Passing 1&2 as String to the Function so that their sum will be returned.
         System.out.println(StringCalculator.add("1,2"));
+
     }
 }
