@@ -3,7 +3,6 @@ package StringCalcFile;
 import java.util.ArrayList;
 
 import static java.lang.Integer.parseInt;
-import static java.lang.Integer.signum;
 
 public class StringCalculator
 {
@@ -47,6 +46,13 @@ public class StringCalculator
             }
         }
         return tot;
+    }
+
+    public static int new_line_delimiter(String numbers)
+    {
+        String nums[] = numbers.split("\n|,");
+        int len = nums.length;
+        return sum(nums,len);
     }
 
 

@@ -30,5 +30,8 @@ public class Main
 
         //Passing 2,1001 as String and here 1001 will be ignored as it is greater than 1000 sum of values less than 1000 will be returned.
         System.out.println(StringCalculator.add("2,1001"));
+
+        //Passing 10\n50,20\n30 as String and their sum will be returned.
+        System.out.println(StringCalculator.new_line_delimiter("10\n50,20\n30"));
     }
 }
