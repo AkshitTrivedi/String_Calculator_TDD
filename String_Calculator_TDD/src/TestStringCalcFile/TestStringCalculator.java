@@ -19,4 +19,14 @@ public class TestStringCalculator
     {
         assertEquals(1, StringCalculator.to_Handle_Zero_and_One("1"));
     }
+
+    //Third Test Case to return Sum of 2 Numbers Passed as String.
+    @Test
+    public void Return_Sum_Of_Two_Numbers()
+    {
+        assertEquals(3,Addition_Of_Two_Numbers("1,2"));
+    }
+
+    
+
 }
