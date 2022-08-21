@@ -1,7 +1,10 @@
+import StringCalcFile.StringCalculator;
+
 public class Main
 {
     public static void main(String[] args)
     {
-        System.out.println("Hello world!");
+        //Passing Empty String to the Function so that 0 will be returned.
+        System.out.println(StringCalculator.addition(""));
     }
 }
