@@ -26,11 +26,19 @@ public class TestStringCalculator
     {
         assertEquals(1+2,StringCalculator.add("1,2"));
     }
+
     //Fourth Test Case to return Sum of Unknown Numbers Passed as String.
     @Test
     public void Return_Sum_Of_Unknown_Values_Passed_To_It()
     {
         assertEquals(10+20+30+40+50,StringCalculator.add("10,20,30,40,50"));
+    }
+
+    //5th Test Case to add AlphaNumeric Values and return Sum of it.
+    @Test
+    public void Return_Sum_Of_Alphanumeric_Value()
+    {
+        assertEquals(7,StringCalculator.add("1,2,a,c"));
     }
 
 
