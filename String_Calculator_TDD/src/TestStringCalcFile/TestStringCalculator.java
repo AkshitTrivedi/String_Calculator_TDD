@@ -24,7 +24,7 @@ public class TestStringCalculator
     @Test
     public void Return_Sum_Of_Two_Numbers()
     {
-        assertEquals(1+2,StringCalculator.Addition_Of_Two_Numbers("1,2"));
+        assertEquals(1+2,StringCalculator.add("1,2"));
     }
 
 

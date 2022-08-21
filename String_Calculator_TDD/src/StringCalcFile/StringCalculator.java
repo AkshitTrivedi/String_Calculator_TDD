@@ -6,21 +6,27 @@ public class StringCalculator
 {
     public static int add(String numbers)
     {
+        String nums[] = numbers.split(",");
+        int len = nums.length;
 
         if(numbers.isEmpty())
         {
             return 0;
         }
-        else if(numbers=="1")
+        else if(numbers.equals("1"))
         {
             return 1;
         }
-        return -1;
+        return sum(nums,len);
     }
 
-    public static int Addition_Of_Two_Numbers(String numbers)
+    static int sum(String nums[], int len)
     {
-        String addsum[] = numbers.split(",");
-        return (parseInt(addsum[0])+parseInt(addsum[1]));
+        int tot=0;
+        for(int i=0;i<len;i++)
+        {
+            tot+=parseInt(nums[i]);
+        }
+        return tot;
     }
 }

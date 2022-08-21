@@ -11,6 +11,6 @@ public class Main
         System.out.println(StringCalculator.add("1"));
 
         //Passing 1&2 as String to the Function so that their sum will be returned.
-        System.out.println(StringCalculator.Addition_Of_Two_Numbers("1,2"));
+        System.out.println(StringCalculator.add("1,2"));
     }
 }
