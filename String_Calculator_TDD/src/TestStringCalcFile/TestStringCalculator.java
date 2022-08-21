@@ -10,12 +10,13 @@ public class TestStringCalculator
     @Test
     public void Return_Zero_For_Empty_String()
     {
-        assertEquals(0, StringCalculator.handle_Zero_and_One(""));
+        assertEquals(0, StringCalculator.to_Handle_Zero_and_One(""));
     }
 
+    //Second Test Case to return 1 when String "1" is passed.
     @Test
     public void Return_One_When_One_is_Passed()
     {
-        assertEquals(1, StringCalculator.handle_Zero_and_One("1"));
+        assertEquals(1, StringCalculator.to_Handle_Zero_and_One("1"));
     }
 }

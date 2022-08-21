@@ -2,7 +2,7 @@ package StringCalcFile;
 
 public class StringCalculator
 {
-    public static int handle_Zero_and_One(String s)
+    public static int to_Handle_Zero_and_One(String s)
     {
         if(s.isEmpty())
         {
@@ -12,6 +12,6 @@ public class StringCalculator
         {
             return 1;
         }
-        return 100;
+        return -1;
     }
 }
