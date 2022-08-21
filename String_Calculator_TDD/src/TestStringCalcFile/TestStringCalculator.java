@@ -48,5 +48,18 @@ public class TestStringCalculator
         }
     }
 
+    //6th Test Case to pass Multiple Negative Number and display them with Exception.
+    @Test
+    public void Exception_When_Multiple_Negative_Number_Passed()
+    {
+        try
+        {
+            StringCalculator.add("10,-5,20,-50,-60");
+        }
+        catch(RuntimeException e)
+        {
+           assertEquals("Negatives not allowed: [-5,50,-60]", e.getMessage());
+        }
+    }
 
 }
