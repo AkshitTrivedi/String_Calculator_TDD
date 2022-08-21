@@ -69,4 +69,10 @@ public class TestStringCalculator
         assertEquals(5+10+15,StringCalculator.add("5,1050,10,15"));
     }
 
+    //8th Test Case to handle new lines between numbers.
+    @Test
+    public void Handling_New_Line_Delimiter()
+    {
+        assertEquals(1+2+3,StringCalculator.new_line_delimiter("1\n2,3"));
+    }
 }
