@@ -41,7 +41,7 @@ public class StringCalculator
         int tot=0;
         for(int i=0;i<len;i++)
         {
-            if(parseInt(nums[i])>0)
+            if(parseInt(nums[i])>0 && parseInt(nums[i])<=1000)
             {
                 tot += parseInt(nums[i]);
             }
@@ -67,18 +67,18 @@ public class StringCalculator
 //    }
 
 
-    public static int greater_than_1000(String numbers)
-    {
-        String nums[] = numbers.split(",");
-        int len = nums.length;
-        int tot=0;
-        for(int i=0;i<len;i++)
-        {
-            if (parseInt(nums[i])<=1000)
-            {
-                tot+=parseInt(nums[i]);
-            }
-        }
-        return tot;
-    }
+//    public static int greater_than_1000(String numbers)
+//    {
+//        String nums[] = numbers.split(",");
+//        int len = nums.length;
+//        int tot=0;
+//        for(int i=0;i<len;i++)
+//        {
+//            if (parseInt(nums[i])<=1000)
+//            {
+//                tot+=parseInt(nums[i]);
+//            }
+//        }
+//        return tot;
+//    }
 }

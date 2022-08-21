@@ -28,7 +28,7 @@ public class Main
         //Passing Multiple Negative Number so that Exception will be raised and printing Negative Numbers.
         //System.out.println(StringCalculator.add("-5,10,55,-100,-250,-90"));
 
-        //Passing 2000,90,1700,10 as String to the Function so that their sum will be returned.
-        System.out.println(StringCalculator.greater_than_1000("2,1001"));
+        //Passing 2,1001 as String and here 1001 will be ignored as it is greater than 1000 sum of values less than 1000 will be returned.
+        System.out.println(StringCalculator.add("2,1001"));
     }
 }
