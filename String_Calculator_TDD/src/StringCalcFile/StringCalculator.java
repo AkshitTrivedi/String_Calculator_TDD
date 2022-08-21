@@ -48,7 +48,16 @@ public class StringCalculator
         return tot;
     }
 
-
+    public static int alphabet_sum(String s)
+    {
+        char ch[]=s.toCharArray();
+        int tot=0;
+        for(int i=0;i<ch.length;i++)
+        {
+            tot+=(ch[i] - 'a' + 1);
+        }
+        return tot;
+    }
 
 //    public static int new_line_delimiter(String numbers)
 //    {
