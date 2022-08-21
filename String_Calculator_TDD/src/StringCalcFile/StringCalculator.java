@@ -1,22 +1,26 @@
 package StringCalcFile;
 
+import static java.lang.Integer.parseInt;
+
 public class StringCalculator
 {
-    public static int to_Handle_Zero_and_One(String s)
+    public static int add(String numbers)
     {
-        if(s.isEmpty())
+
+        if(numbers.isEmpty())
         {
             return 0;
         }
-        else if(s=="1")
+        else if(numbers=="1")
         {
             return 1;
         }
         return -1;
     }
 
-    private int Addition_Of_Two_Numbers(String s)
+    public static int Addition_Of_Two_Numbers(String numbers)
     {
-
+        String addsum[] = numbers.split(",");
+        return (parseInt(addsum[0])+parseInt(addsum[1]));
     }
 }

@@ -10,23 +10,23 @@ public class TestStringCalculator
     @Test
     public void Return_Zero_For_Empty_String()
     {
-        assertEquals(0, StringCalculator.to_Handle_Zero_and_One(""));
+        assertEquals(0, StringCalculator.add(""));
     }
 
     //Second Test Case to return 1 when String "1" is passed.
     @Test
     public void Return_One_When_One_is_Passed()
     {
-        assertEquals(1, StringCalculator.to_Handle_Zero_and_One("1"));
+        assertEquals(1, StringCalculator.add("1"));
     }
 
     //Third Test Case to return Sum of 2 Numbers Passed as String.
     @Test
     public void Return_Sum_Of_Two_Numbers()
     {
-        assertEquals(3,Addition_Of_Two_Numbers("1,2"));
+        assertEquals(1+2,StringCalculator.Addition_Of_Two_Numbers("1,2"));
     }
 
-    
+
 
 }
