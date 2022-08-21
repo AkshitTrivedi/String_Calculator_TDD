@@ -34,5 +34,7 @@ public class Main
         //Passing 10\n50,20\n30 as String and their sum will be returned.
         System.out.println(StringCalculator.add("10\n50,20\n30"));
 
+        System.out.println(StringCalculator.alphabet_sum("abcd"));
+
     }
 }

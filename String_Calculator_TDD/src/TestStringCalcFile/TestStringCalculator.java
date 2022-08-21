@@ -75,4 +75,11 @@ public class TestStringCalculator
     {
         assertEquals(1+2+3,StringCalculator.add("1\n2,3"));
     }
+
+    //9th Test Case to add sum of Alphabets.
+    @Test
+    public void Handling_AlphaNumeric_Values()
+    {
+        assertEquals(1+2+3+4,StringCalculator.alphabet_sum("abcd"));
+    }
 }

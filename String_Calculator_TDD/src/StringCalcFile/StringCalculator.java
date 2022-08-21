@@ -11,7 +11,6 @@ public class StringCalculator
         //String nums[] = numbers.split(",");
         String nums[] = numbers.split("\n|,");
         int len = nums.length;
-
         if(numbers.isEmpty())
         {
             return 0;
@@ -48,6 +47,8 @@ public class StringCalculator
         }
         return tot;
     }
+
+
 
 //    public static int new_line_delimiter(String numbers)
 //    {
