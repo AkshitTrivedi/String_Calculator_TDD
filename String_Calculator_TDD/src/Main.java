@@ -23,6 +23,9 @@ public class Main
         System.out.println(StringCalculator.add("60,88,33,47,55,10,500"));
 
         //Passing Negative Number so that Exception will be raised.
-        System.out.println(StringCalculator.add("-5,10,55"));
+        //System.out.println(StringCalculator.add("-5,10,55"));
+
+        //Passing Multiple Negative Number so that Exception will be raised and printing Negative Numbers.
+        System.out.println(StringCalculator.add("-5,10,55,-100,-250,-90"));
     }
 }

@@ -58,7 +58,7 @@ public class TestStringCalculator
         }
         catch(RuntimeException e)
         {
-           assertEquals("Negatives not allowed: [-5,50,-60]", e.getMessage());
+           assertEquals("Negatives not allowed: [-5, -50, -60]", e.getMessage());
         }
     }
 
